@@ -7,7 +7,7 @@
 	class m{
 		constructor(){
 			this.immersiveFlag = true;//是否开启沉浸式状态栏
-			this.domain = '47.107.39.227';
+			this.domain = '123.26.26.1';
 			this.port = '9000/wap',
 			this.protocol = 'http';
 			this.host = this.protocol + '://' + this.domain + ':' + this.port;
