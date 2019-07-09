@@ -1,0 +1,11 @@
+/*统一定义字体颜色/背景颜色*/
+.col-white{
+	color: #FFFFFF;
+}
+.col-ff00ff{
+	color: #FF00FF;
+}
+
+.bg-f2f2f2{
+	background-color: #F2F2F2;
+}

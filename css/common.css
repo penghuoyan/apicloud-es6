@@ -1,0 +1,18 @@
+@import url("api.css");
+@import url("flex.css");
+@import url("font.css");
+@import url("fonts/iconfont.css");
+
+
+
+/*公用头部样式*/
+#header{
+	height: 0.9rem;
+	background: blue;
+	color: #fff;
+	padding-left: 0.3rem;
+	padding-right: 0.3rem;
+}
+/*1px底部边框在安卓机型上看着比较粗,采用缩放展示为0.5px*/
+.border-b:after{     content: '';     position: absolute;     left: 0;  top:0;     background: #ddd;   right:0;    height: 1px;     -webkit-transform: scaleY(0.5);             transform: scaleY(0.5);     -webkit-transform-origin: 0 0;             transform-origin: 0 0; }
+	

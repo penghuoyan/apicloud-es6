@@ -1,0 +1,43 @@
+/*flex兼容#########*/
+
+/*让弹性盒元素在必要的时候换行*/
+.flex-wrap{ -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+/*使用弹性盒子布局*/
+.flex { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+/*宽高自动扩充*/
+.flex-1 { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
+
+.jtop { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
+
+/*子元素居右*/
+.jright { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
+
+/*内容两边对其*/
+.cont-rl { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+/*子元素对其方式*/
+/*左右居中*/
+.jcenter { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+/*左右均分*/
+.jaround{ justify-content: space-around; }
+
+/*上下居中*/
+.cont-center { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+/*上对其*/
+.cont-flex-start { -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
+
+/*下对其*/
+.cont-flex-end { -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
+
+/*文字基线对其*/
+.cont-baseline { -webkit-box-align: baseline; -ms-flex-align: baseline; align-items: baseline; }
+
+/*横向布局*/
+.row { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+/*垂直布局*/
+.column { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
