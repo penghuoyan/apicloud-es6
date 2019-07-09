@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>开发</title>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <style>
+        .empty{ text-align: center;padding: 0.3rem 0;background: #999;}
+        ul li{border-bottom: 1px solid #DEDEDE;padding: 0.31rem;}
+        ul li label{color:  blue;}
+    </style>
+</head>
+<body>
+	<div class="empty">项目目录结构介绍</div>
+	<ul>
+		<li> <label>css</label> <p>存放所有样式文件及字体图标</p> </li>
+		<li> <label>html</label> <p>存放所有页面文件，根据功能模块，划分文件夹</p> </li>
+		<li> <label>image</label> <p>存放所有图片文件，根据功能模块，划分文件夹</p> </li>
+		<li> <label>parsed_scripts</label> <p>自动生成的编译后的文件夹，使用时引入这个文件夹下js，如项目未使用es6，不用理会次文件夹</p> </li>
+		<li> <label>plugs</label> <p>内部封装的功能插件、三方引入的插件(不需要编译的都放入此文件夹)</p> </li>
+		<li> <label>scripts</label> <p>需要编译的js插件、页面中的js(对应每个页面)</p> </li>
+		<li> <label>其他</label> <p>其他配置文件，除apicloud官方配置，其余文件开发过程中不用理会</p> </li>
+	</ul>
+</body>
+</html>

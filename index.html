@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>底部导航</title>
+    <link rel="stylesheet"  href="css/common.css"/>
+    <style>
+        #footer{  background-color: #f2f2f2; position: fixed;bottom: 0;width: 100%;}
+        /*#footer ul{padding-left:0.3rem;padding-right: 0.3rem;}*/
+        #footer ul li{  padding-top: 0.58rem; padding-bottom: 0.08rem; background: url() no-repeat center 0.02rem; background-size: auto 0.5rem; text-align: center; }
+        #footer ul li.active{ color: #6ab494; }
+        #footer ul li:nth-child(1){ background-image: url(./image/bottombtn0101.png); }
+        #footer ul li:nth-child(2){ background-image: url(./image/bottombtn0201.png); }
+        #footer ul li:nth-child(3){ background-image: url(./image/bottombtn0301.png); }
+        #footer ul li:nth-child(4){ background-image: url(./image/bottombtn0401.png); }
+        #footer ul li:nth-child(1).active{ background-image: url(./image/bottombtn0102.png); }
+        #footer ul li:nth-child(2).active{ background-image: url(./image/bottombtn0202.png); }
+        #footer ul li:nth-child(3).active{ background-image: url(./image/bottombtn0302.png); }
+        #footer ul li:nth-child(4).active{ background-image: url(./image/bottombtn0402.png); }
+        .flex-con{
+        	overflow: auto
+        }
+    </style>
+</head>
+<body>
+    <!-- start: 首页脚部 -->
+    <div class="font-28" id="footer">
+        <ul class="flex row cont-rl">
+            <li class="flex-con flex-1 active" onclick="randomSwitchBtn( this );" tapmode>云API</li>
+            <li class="flex-con flex-1" onclick="randomSwitchBtn( this );" tapmode>端API</li>
+            <li class="flex-con flex-1" onclick="randomSwitchBtn( this );" tapmode>开发</li>
+            <li class="flex-con flex-1" onclick="randomSwitchBtn( this );" tapmode>文档</li>
+        </ul>
+    </div>
+    <!-- end: 首页脚部 -->
+
+    <script src="parsed_scripts/api.js"></script>
+    <script src="plugs/rem/auto_rem.js"></script>
+    <script src="parsed_scripts/app.js" ></script>
+    <!-- 加载头部、内容 -->
+    <script src="parsed_scripts/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>云API</title>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <style>
+        .empty{ text-align: center; padding: 0.3rem 0;border: 1px solid blue;border-radius:5px;margin-top: 0.3rem}
+        .tip{background: #999;margin-top: 0.5rem;padding: 0.3rem 0.3rem}
+        ul{padding: 0;}
+        ul li{ list-style: none;border-bottom:1px solid #dedede;padding: 0.3rem 0.3rem;box-sizing: border-box}
+        .iconfont{padding-right: 0.15rem;}
+        .icon-weishoucang{color: gold;}
+    </style>
+</head>
+<body>
+    <div class="empty font-28" onclick="test()">公用头部演示</div>
+    <div class="tip font-28"><i class="icon iconfont icon-jingshi"></i>开发注意事项：</div>
+    <ul class="font-28">
+        <li><i class="icon iconfont icon-weishoucang"></i>公用头部演示，仅提供组件封装方式，实际开发过程中不要使用，使用后面的统一样式头部</li>
+        <li><i class="icon iconfont icon-weishoucang"></i>头部跟内容分为两个页面，eg：demo_tap.html,demo.html</li>
+        <li><i class="icon iconfont icon-weishoucang"></i>为防止白屏情况，页面头部等进入页面马上需要展示的部分不能使用js动态加载(项目入口文件：index.html,属于预加载文件可以使用)</li>
+        <li><i class="icon iconfont icon-weishoucang"></i>页面中的JavaScript统一采用外链接引入方式</li>
+        <li><i class="icon iconfont icon-weishoucang"></i>如项目中需要使用es6，需要使用框架中的babel编译后使用</li>
+        <li><i class="icon iconfont icon-weishoucang"></i>项目中如不使用es6，则不需要编译，开发方式跟以前一样；同一个项目中必须统一使用或者不使用es6</li>
+        <li><i class="icon iconfont icon-weishoucang"></i>用js动态加载头部，会出现白屏情况，实际开发过程中使用：统一头部样式，头部写在页面中</li>
+    </ul>
+
+    <script src="../../plugs/rem/auto_rem.js"></script>
+    <script src="../../parsed_scripts/app.js" ></script>
+    <script src="../../parsed_scripts/main/frame_0.js"></script>
+</body>
+</html>
